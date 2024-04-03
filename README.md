@@ -1,4 +1,7 @@
 https://squidfunk.github.io/mkdocs-material/creating-your-site/
 
+## Local Dev
 
-docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material new .
+```shell
+run_dev.sh
+```

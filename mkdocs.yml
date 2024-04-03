@@ -1,0 +1,68 @@
+# https://www.mkdocs.org/user-guide/configuration/
+site_name: docs.deving.zone
+site_url: "https://docs.deving.zone"
+
+
+dev_addr: 0.0.0.0:0000 #inside docker container
+
+repo_url: https://github.com/deving-zone-community/docs
+remote_branch: master
+#
+#nav:
+#  - 'Home': 'index.md'
+#  - 'Kujira':
+#    - 'Pond': 'kujira-pond/index.md'
+#    - 'Hummingbot': 'kujira-hummingbot/index.md'
+#  - 'About': 'about.md'
+#  - 'deving.zone': 'https://deving.zone/'
+
+#markdown_extensions:
+#  - toc:
+#      baselevel: 2
+
+exclude_docs: |
+  api-config.json    # A file with this name anywhere.
+  drafts/            # A "drafts" directory anywhere.
+  /requirements.txt  # Top-level "docs/requirements.txt".
+  *.py               # Any file with this extension anywhere.
+  !/foo/example.py   # But keep this particular file.
+
+# dev_addr:
+theme:
+  language: en
+  name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+#    - pymdownx.snippets
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#highlight
+  - pymdownx.highlight:
+      line_spans: __span
+      pygments_lang_class: true
+      auto_title: true
+      linenums: false
+      anchor_linenums: false
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+#  - - pymdownx.smartsymbols
+
+#plugins:
+#  - search
+#  - your_other_plugin:
+#      option1: value
+#      option2: other value
+
+#markdown_extensions:
+#  - smarty
+#  - toc:
+#      permalink: true
+#  - sane_lists
+
+extra:
+  version: !ENV [SITE_VERSION, 'undefined']
