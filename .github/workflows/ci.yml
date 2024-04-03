@@ -27,4 +27,4 @@ jobs:
       - run: pip install mkdocs-material
       - run: ls -la
       - run: mkdocs gh-deploy --help
-      - run: mkdocs gh-deploy --force  --verbose
+      - run: mkdocs gh-deploy --force  --verbose --no-history
