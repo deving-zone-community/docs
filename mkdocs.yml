@@ -1,12 +1,13 @@
 # https://www.mkdocs.org/user-guide/configuration/
 site_name: docs.deving.zone
-site_url: "https://docs.deving.zone"
+#site_url: "https://docs.deving.zone/"
 
-
-dev_addr: 0.0.0.0:0000 #inside docker container
+# dev_addr: 0.0.0.0:0000 #inside docker container
 
 repo_url: https://github.com/deving-zone-community/docs
 remote_branch: gh-pages # deployment branch
+remote_name: origin
+
 #
 #nav:
 #  - 'Home': 'index.md'
@@ -34,7 +35,6 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
-#    - pymdownx.snippets
 
 markdown_extensions:
   - md_in_html
