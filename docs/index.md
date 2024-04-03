@@ -13,8 +13,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Content
 
-> AUTOTOC here
-
 - [Kujira Hummingbot](kujira-hummingbot/index.md)
 - [Kujira Pond](kujira-pond/index.md)
 
