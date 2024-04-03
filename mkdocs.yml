@@ -6,7 +6,7 @@ site_url: "https://docs.deving.zone"
 dev_addr: 0.0.0.0:0000 #inside docker container
 
 repo_url: https://github.com/deving-zone-community/docs
-remote_branch: master
+remote_branch: gh-pages # deployment branch
 #
 #nav:
 #  - 'Home': 'index.md'
