@@ -1,41 +1,24 @@
 ---
-title: Home
-summary: Welcome to docs.deving.zone
+title: Welcome to docs.deving.zone
+summary: Docs by deving.zone
 authors:
     - Joe (deving.zone)    
-date: 2004-04-03
+date: 2024-05-07
 # some_url: https://example.com
 ---
 
 # Welcome to docs.deving.zone
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Content
+### Hummingbot with Kujira
 
-- [Kujira Hummingbot](kujira-hummingbot/index.md)
-- [Kujira Pond](kujira-pond/index.md)
+- [Kujira Hummingbot by Funttastic](hummingbot/kujira-funttastic/index.md)
+- [Sample Strategies](hummingbot/kujira-funttastic/sample-strategies.md)
 
+### Kujira Dev Resources
 
-[//]: # (## Commands)
+- [Overview](kujira-dev/index.md)
 
-[//]: # ()
-[//]: # (* `mkdocs new [dir-name]` - Create a new project.)
+### Kujira Resources
 
-[//]: # (* `mkdocs serve` - Start the live-reloading docs server.)
-
-[//]: # (* `mkdocs build` - Build the documentation site.)
-
-[//]: # (* `mkdocs -h` - Print help message and exit.)
-
-[//]: # ()
-[//]: # (## Project layout)
-
-[//]: # ()
-[//]: # (    mkdocs.yml    # The configuration file.)
-
-[//]: # (    docs/)
-
-[//]: # (        index.md  # The documentation homepage.)
-
-[//]: # (        ...       # Other markdown pages, images and other f)
+- [Kujira Resources](kujira-resources/index.md)

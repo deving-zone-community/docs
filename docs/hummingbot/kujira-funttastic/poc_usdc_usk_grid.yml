@@ -1,10 +1,10 @@
 id: "poc_usdc_usk_grid"
-wallet: "kujira1j69crp8ptvgaujfstsh3cspve43v5un2sv4nyp"
+wallet: "YOUR-WALLET-HERE"
 # https://github.com/Team-Kujira/kujira.js/blob/master/lib/cjs/network.js#L106
 # see: https://github.com/Team-Kujira/kujira.js/blob/aee74e258c53026c1d41260b8a22aa64e110bbb7/lib/cjs/denom.d.ts#L22
 # https://raw.githubusercontent.com/Team-Kujira/kujira.js/master/src/resources/contracts.json
 # https://fin.kujira.network/trade/kujira1kt0jxlr5fkx3xepymxav5c3h8sjnmutp3za2e6r5k9pgsta34trq8emzqj?q=all&s=ntrn
-market: "USDC/USK"
+market: "USDC-USK"
 strategy:
   layers:
     - bid:
@@ -23,38 +23,6 @@ strategy:
         budget:
           absolute: 1 # in USD
           percentage: 0.2
-#    - bid:
-#        quantity: 1
-#        spread:
-#          absolute: 25
-#          percentage: 25
-#        budget:
-#          absolute: 1 # in USD
-#          percentage: 0.1
-#      ask:
-#        quantity: 1
-#        spread:
-#          absolute: 25
-#          percentage: 25
-#        budget:
-#          absolute: 1 # in USD
-#          percentage: 0.1
-#    - bid:
-#        quantity: 1
-#        spread:
-#          absolute: 50
-#          percentage: 50
-#        budget:
-#          absolute: 1 # in USD
-#          percentage: 0.1
-#      ask:
-#        quantity: 1
-#        spread:
-#          absolute: 50
-#          percentage: 50
-#        budget:
-#          absolute: 1 # in USD
-#          percentage: 0.1
 #  tick_interval: 59
 #  order_type: LIMIT
 #  price_strategy: MIDDLE

@@ -8,14 +8,22 @@ repo_url: https://github.com/deving-zone-community/docs
 remote_branch: gh-pages # deployment branch
 remote_name: origin
 
-#
-#nav:
-#  - 'Home': 'index.md'
-#  - 'Kujira':
-#    - 'Pond': 'kujira-pond/index.md'
-#    - 'Hummingbot': 'kujira-hummingbot/index.md'
-#  - 'About': 'about.md'
-#  - 'deving.zone': 'https://deving.zone/'
+
+nav:
+  - 'Home': 'index.md'
+  - 'Kujira Hummingbot':
+    - 'Overview': 'hummingbot//kujira-funttastic/index.md'
+    - 'Sample Strategies': 'hummingbot//kujira-funttastic/sample-strategies.md'
+    - 'Step by Step Setup': 'hummingbot//kujira-funttastic/step-by-step-setup.md'
+    - 'Advanced': 'hummingbot//kujira-funttastic/advanced.md'
+
+  - 'Kujira Dev':
+    - 'Overview': 'kujira-dev/index.md'
+    - 'Tech Stacks': 'kujira-dev/techstacks.md'
+    - 'Start with Elixir': 'kujira-dev/elixir/index.md'
+  - 'Kujira Resources': 'kujira-resources/index.md'
+  #- 'About': 'about.md'
+  - 'deving.zone': 'https://deving.zone/'
 
 #markdown_extensions:
 #  - toc:
@@ -35,6 +43,7 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
+#    - navigation.footer
 
 markdown_extensions:
   - md_in_html
@@ -48,11 +57,17 @@ markdown_extensions:
       anchor_linenums: false
   - pymdownx.smartsymbols
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#snippets
+#  - pymdownx.snippets:
+#      base_path: ["."]
+  #      auto_append: ["abbreviations.md"]
+#      base_path: ["docs"]
+
   - pymdownx.superfences
 #  - - pymdownx.smartsymbols
 
-#plugins:
+plugins:
+  - privacy # https://squidfunk.github.io/mkdocs-material/plugins/privacy/
 #  - search
 #  - your_other_plugin:
 #      option1: value
