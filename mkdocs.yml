@@ -11,19 +11,24 @@ remote_name: origin
 
 nav:
   - 'Home': 'index.md'
-  - 'Kujira Hummingbot':
-    - 'Overview': 'hummingbot//kujira-funttastic/index.md'
+  - 'Hummingbot':
+    - 'Overview': 'hummingbot/kujira-funttastic/index.md'
+    - 'Setup: Step by Step': 'hummingbot//kujira-funttastic/step-by-step-setup.md'
     - 'Sample Strategies': 'hummingbot//kujira-funttastic/sample-strategies.md'
-    - 'Step by Step Setup': 'hummingbot//kujira-funttastic/step-by-step-setup.md'
-    - 'Advanced': 'hummingbot//kujira-funttastic/advanced.md'
+    - 'Advanced Topics': 'hummingbot//kujira-funttastic/advanced.md'
 
-  - 'Kujira Dev':
+  - 'Kujira Dev Resources':
     - 'Overview': 'kujira-dev/index.md'
     - 'Tech Stacks': 'kujira-dev/techstacks.md'
-    - 'Start with Elixir': 'kujira-dev/elixir/index.md'
-  - 'Kujira Resources': 'kujira-resources/index.md'
+    - 'Kujira Resources': 'kujira-dev/kujira-resources.md'
+
+  - 'Elixir':
+      - 'Overview': 'guides/elixir/index.md'
+#      - 'getting started': 'elixir/index.md'
+      - 'Architecture': 'guides/elixir/architecture.md'
+
   #- 'About': 'about.md'
-  - 'deving.zone': 'https://deving.zone/'
+#  - 'deving.zone': 'https://deving.zone/'
 
 #markdown_extensions:
 #  - toc:
@@ -43,7 +48,42 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
-#    - navigation.footer
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+  palette:
+    # TODO: cusotm occ colo palette https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#custom-colors
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+#  icon:
+#    repo: fontawesome/brands/git-alt
+  #  extra_css:
+  #    - css/extra.css
+  #    - css/second_extra.css
+#  logo: assets/logo.png
+  #  favicon: images/favicon.png
 
 markdown_extensions:
   - md_in_html
@@ -62,16 +102,51 @@ markdown_extensions:
 #      base_path: ["."]
   #      auto_append: ["abbreviations.md"]
 #      base_path: ["docs"]
-
   - pymdownx.superfences
-#  - - pymdownx.smartsymbols
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 plugins:
   - privacy # https://squidfunk.github.io/mkdocs-material/plugins/privacy/
+  - tags:
+      enabled: true # https://squidfunk.github.io/mkdocs-material/plugins/tags/
+      #      tags_hierarchy: true #only in sponosred edition
 #  - search
 #  - your_other_plugin:
 #      option1: value
 #      option2: other value
+  # https://github.com/LukeCarrier/mkdocs-drawio-exporter
+  - drawio-exporter:
+      # Diagrams are cached to speed up site generation. The default path is
+      # drawio-exporter, relative to the documentation directory.
+      cache_dir: 'drawio-exporter'
+      # Path to the Draw.io executable:
+      #   * drawio on Linux
+      #   * draw.io on macOS
+      #   * or draw.io.exe on Windows
+      # We'll look for it on your system's PATH, then default installation
+      # paths. If we can't find it we'll warn you.
+      drawio_executable: null
+      # Additional Draw.io CLI args
+      #   * --embed-svg-images will embed external images in SVGS, if format is "svg".
+      #      drawio_args: [ ]
+      drawio_args:
+        - --no-sandbox
+      # Output format (see draw.io --help | grep format)
+      format: svg
+      # Embed format
+      #   * The default is to embed via the <img> tag, only rewriting the
+      #     value of the src attribute.
+      #   * Consider <object type="image/svg+xml" data="{img_src}"></object>
+      #     to enable interactive elements (like hyperlinks) in SVGs.
+      #   * Consider {content} to inline SVGs into documents directly, useful
+      #     for styling with CSS, preserving interactivity, and improving
+      #     search by indexing diagram text.
+      # embed_format: '{img_open}{img_src}{img_close}'
+      embed_format: '<object type="image/svg+xml" data="{img_src}"></object>'
+      # Glob pattern for matching source files
+      sources: '*.drawio'
 
 #markdown_extensions:
 #  - smarty
@@ -80,4 +155,5 @@ plugins:
 #  - sane_lists
 
 extra:
+  generator: false # hide generator in footer
   version: !ENV [SITE_VERSION, 'undefined']

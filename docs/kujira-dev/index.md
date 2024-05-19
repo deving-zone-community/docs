@@ -11,6 +11,14 @@ date: 2024-05-07
 
 - <https://docs.kujira.app/developers/developer-kickstart-page>
 
+![](img/sample-diagram.drawio)
+
+### building blocks
+
+## JavaScript / TypeScript
+
+## Elixir
+
 [//]: # ()
 [//]: # (```python)
 
@@ -49,6 +57,17 @@ Pond is an easy way to set up a local Kujira development chain. It uses docker c
 The second chain is meant to test IBC related things and therefore has only one validator and no price feeder.
 
 <https://github.com/Team-Kujira/pond>
+
+
+
+Feeder:  127.0.0.1:10171->10171/tcp
+Kujira1-1:  127.0.0.1:10117->10117/tcp, 127.0.0.1:10156-10157->10156-10157/tcp, 127.0.0.1:10190->10190/tcp
+Kujira2-1:  127.0.0.1:20117->20117/tcp, 127.0.0.1:20156-20157->20156-20157/tcp, 127.0.0.1:20190->20190/tcp
+
+
+this config worked in https://github.com/Team-Kujira/explorer
+> config :explorer, Explorer.Node, host: "localhost", port: 10190, websocket: "ws://localhost:10157"
+
 
 ### pond-ex
 

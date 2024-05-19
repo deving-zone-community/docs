@@ -1,3 +1,9 @@
-site/
-
+site
+public
+tmp
 .cache
+
+# ignore draw.io bkp files
+**/*.bkp
+
+docs/drawio-exporter

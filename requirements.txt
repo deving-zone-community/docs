@@ -1,0 +1,3 @@
+# https://pypi.org/project/mkdocs-material/
+mkdocs-material >= 9.5.22
+mkdocs-drawio-exporter >= 0.9.1

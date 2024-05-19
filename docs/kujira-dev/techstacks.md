@@ -12,67 +12,68 @@ under construction
 ## Kujira Apps
 
 
-ORCA
-FIN
-BOW
-GHOST
-PILOT
-BLUE
-POD
-FINDER https://finder.kujira.app/
+### ORCA
+### FIN
+### BOW
+### GHOST
+### PILOT
+### BLUE
+### POD
+### FINDER
+
+<https://finder.kujira.app/>
 
 very early days but have made a start on an open source Kujira block explorer, using phoenix and kujira-ex. might be a good entrypoint to get to grips with the framework if it's new, and add in the features that you'd find useful in the explorer
 
-https://github.com/Team-Kujira/explorer
 
 
 ## Protocols
 
-## Manta
+### Manta
 
-## Calc
+### Calc
 
 <https://calculated.fi>
 
-## Fusion 
+### Fusion 
 
 <https://plasma.fuzion.app>
 <https://fuzion.app/bonds>
 
-## Autokujira.app
+### Autokujira.app
 
-## Winkhub
+### Winkhub
 
 https://winkhub.app/
 
-## DaoDao
+### DaoDao
 
 https://daodao.zone/
 
-## Quark
+### Quark
 
 https://quarkprotocol.com/
 
-## Unstake.fi
+### Unstake.fi
 
 https://unstake.fi/
 
-## Nami
+### Nami
 
-## YieldHarbour
+### YieldHarbour
 
-## Aqualibre
+### Aqualibre
 
 <https://www.aqlatoken.com/>
 
 
-## Orbem Wars
+### Orbem Wars
 <https://orbemwars.com/>
 
-## Kujira Index
+### Kujira Index
 - <https://kujiraindex.io/>
 
-## kujira.domains
+### kujira.domains
 
 - <https://kujira.domains>
 

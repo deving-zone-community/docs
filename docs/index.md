@@ -10,15 +10,18 @@ date: 2024-05-07
 # Welcome to docs.deving.zone
 
 
-### Hummingbot with Kujira
+### Bots
+#### Hummingbot
 
 - [Kujira Hummingbot by Funttastic](hummingbot/kujira-funttastic/index.md)
 - [Sample Strategies](hummingbot/kujira-funttastic/sample-strategies.md)
 
-### Kujira Dev Resources
+### Kujira
+#### Dev Resources
 
 - [Overview](kujira-dev/index.md)
 
-### Kujira Resources
 
-- [Kujira Resources](kujira-resources/index.md)
+### Elixir
+
+- [Overview](guides/elixir/index.md)

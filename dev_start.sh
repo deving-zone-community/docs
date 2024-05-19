@@ -1,1 +1,1 @@
-mkdocs serve
+mkdocs serve --strict --dev-addr localhost:7777

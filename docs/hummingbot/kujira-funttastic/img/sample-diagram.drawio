@@ -1,0 +1,18 @@
+<mxfile host="Electron" modified="2024-05-14T10:32:19.966Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="YddglQbuxsaajnsRyzti" version="24.2.5" type="device">
+  <diagram name="Seite-1" id="UfDsUnkN_F5QDPRHD5YR">
+    <mxGraphModel dx="1098" dy="988" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m2jG0--c5p31EUY5UHOj-1" value="TEST" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="140" height="80" as="geometry" />
+        </mxCell>
+        <UserObject label="This Box even has a Link which works when embedded as XVG" link="https://deving.zone/" linkTarget="_blank" id="m2jG0--c5p31EUY5UHOj-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="250" y="50" width="200" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

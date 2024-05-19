@@ -9,13 +9,19 @@ date: 2024-05-07
 
 # Kujira Hummingbot by Funttastic
 
+
+![Screenshot](img/image.jpg){ width="300" }
+
 [//]: # (## Content)
 
 
+## Architecture
 
 
 
-![Screenshot](img/image.jpg){ width="300" }
+![](img/sample-diagram.drawio)
+
+
 
 ## Disclaimer
 
